@@ -1,0 +1,58 @@
+---
+anomaly_detection: false
+anticipate_data: 
+augment_data: true
+autoencoder_kwargs:
+  cnn_feature_dim: 64
+  common_dim: 64
+  encoder_kernel_size: 5
+  im_size: 128
+  num_iterations: 3
+  num_slots: 7
+  slot_dim: 64
+batchsize: 64
+clipping_norm: 
+copy_to_tmp: true
+dataset_options:
+  dset: iodine
+  max_objects: 6
+  n_images: inf
+decay_rate: 0.5
+decay_steps: 100000
+decoder_pos_embedding_kwargs: {}
+device: cuda
+driver: 
+encoder_pos_embedding_kwargs: {}
+leap_timelimit_h: 3
+log_irrelevant_losses: false
+log_scalar_every: 150
+log_val_every: 300
+loss_bounds: {}
+loss_kwargs: {}
+loss_schedule:
+  reconstruction_loss: 1
+loss_thresholds: {}
+lr: 0.000373213196614723
+lr_scheduling: true
+masks_in_val: true
+max_steps: 500000
+max_val_objects: 10
+n_inner_steps: 
+n_outer_steps: 
+n_val_images: 500
+optim_type: AdamTF
+restart: true
+seed: 1
+val_batchsize: 64
+validation_slots:
+  val:
+    num_iterations: 5
+    num_slots: 11
+  val_like_train:
+    num_iterations: 3
+    num_slots: 7
+variant: baseline
+warmup_iters: 10000
+hydra:
+  run:
+    dir: ./experiments/object_discovery/${now:%Y-%m-%d}/${now:%H-%M-%S}

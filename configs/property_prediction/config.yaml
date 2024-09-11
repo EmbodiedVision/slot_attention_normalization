@@ -1,0 +1,21 @@
+sa_kwargs:
+  num_slots: 10
+  iters: 3
+wandb:
+  project: clevr-property-prediction
+  name: null
+  mode: 
+device: cuda
+lr: 0.00037321319 # 4e-4 * (1 / 2) ** (1 / 10)
+warmup_iters: 10_000
+decay_rate: 0.5
+decay_steps: 100_000
+batchsize: 512
+val_batchsize: 128
+slot_dim: 64
+max_steps: 500_000
+leap_timelimit_h: 3
+seed: 1
+hydra:
+  run:
+    dir: ./experiments/property_prediction/${now:%Y-%m-%d}/${now:%H-%M-%S}

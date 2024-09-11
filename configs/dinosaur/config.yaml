@@ -1,0 +1,32 @@
+---
+batch_size: 64
+checkpoint_every_h: 0.5
+clipping_norm: 1
+copy_timeout_h: 1
+dataset: movi_c
+debugging: false
+decay_halflife: 100000
+device: cuda
+encoder_name: vit_base_patch8_224_dino
+feature_dim: 768
+iters: 3
+leap_time_h: 7
+loss_schedule:
+  reconstruction_loss: 1
+lr: 0.0004
+max_objects: 
+n_features: 784
+n_plotting_instances: 9
+n_slots: 11
+n_steps: 500000
+n_training_sequences: inf
+n_val_sequences: 500
+n_warmup_steps: 10000
+sa_kwargs: {}
+seed: 1
+use_multi_gpu: false
+val_iters: 3
+val_slots: 11
+hydra:
+  run:
+    dir: ./experiments/dinosaur/${now:%Y-%m-%d}/${now:%H-%M-%S}
