@@ -6,7 +6,7 @@ Markus Krimmel, Jan Achterhold, and Joerg Stueckler: \
 Accepted for Transactions on Machine Learning Research (TMLR), 2024
 
 
-If you use the code, data or models provided in this repository for your research, please cite our paper as:
+If you use the code provided in this repository for your research, please cite our paper as:
 ```
 @article{
     krimmel2024_sanormalization,
