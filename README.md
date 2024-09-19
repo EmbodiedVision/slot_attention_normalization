@@ -44,30 +44,6 @@ To run computational experiments, you will need to install various datasets. To 
 Hydra is used for configuring the computational experiments, the `train.py` files are entry points for training.
 The code is adapted to run on shared cluster resources and will therefore periodically interrupt training with exit code 124. Either configure your cluster to reschedule training jobs upon this exit code, or configure `leap_timelimit_h` sufficiently high to avoid interruptions.
 
-## Citation and License
-If you make use of this code, please cite the following:
-
-```
-@article{DBLP:journals/corr/abs-2407-04170,
-  author       = {Markus Krimmel and
-                  Jan Achterhold and
-                  Joerg Stueckler},
-  title        = {Attention Normalization Impacts Cardinality Generalization in Slot
-                  Attention},
-  journal      = {CoRR},
-  volume       = {abs/2407.04170},
-  year         = {2024},
-  url          = {https://doi.org/10.48550/arXiv.2407.04170},
-  doi          = {10.48550/ARXIV.2407.04170},
-  eprinttype    = {arXiv},
-  eprint       = {2407.04170},
-  timestamp    = {Mon, 12 Aug 2024 20:53:40 +0200},
-  biburl       = {https://dblp.org/rec/journals/corr/abs-2407-04170.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
-}
-```
-
-Some parts of this codebase are derived from other projects and therefore fall under specific licenses. Please refer to `LICENSE.md` and headers of the individual code files for details.
 
 ## Property Prediction on CLEVR
 ### Data Preparation
