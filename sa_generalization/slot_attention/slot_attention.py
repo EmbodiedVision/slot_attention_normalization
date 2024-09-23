@@ -23,8 +23,9 @@ SOFTWARE.
 """
 
 """
-This file contains code originally licensed under the MIT license,
-with substantial modifications by Markus Krimmel.
+This file contains code originally from https://github.com/lucidrains/slot-attention/blob/master/slot_attention/slot_attention.py
+
+Originally licensed under the MIT license, with substantial modifications by Markus Krimmel.
 """
 
 import torch
