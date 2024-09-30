@@ -3,7 +3,7 @@ This repository contains training and model code for the publication
 
 Markus Krimmel, Jan Achterhold, and Joerg Stueckler: \
 **Attention Normalization Impacts Cardinality Generalization in Slot Attention**\
-In Transactions on Machine Learning Research (TMLR), 2024
+In Transactions on Machine Learning Research (TMLR), 2024\
 Paper: https://openreview.net/forum?id=llQXLfbGOq
 
 If you use the code provided in this repository for your research, please cite our paper as:
